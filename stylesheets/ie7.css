@@ -1,0 +1,22 @@
+ul li{
+    display: inline !important;
+}
+.columns{
+    width: 928px;
+}
+.columns li p{
+    text-align-last: left;
+}
+.menu li a{
+    line-height: 20px;
+}
+.front-panel img{
+    top: 15px;
+    left: 11px;
+}
+.greeting .side-collage{
+    top: 11px;
+}
+.greeting h2{
+    font-weight: normal;
+}

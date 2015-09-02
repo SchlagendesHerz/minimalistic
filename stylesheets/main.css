@@ -1,0 +1,262 @@
+@import url(reset.css);
+@font-face {
+    font-family: "Rockwell";
+    src: url("../fonts/RockwellRegular/RockwellRegular.eot");
+    src: url("../fonts/RockwellRegular/RockwellRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RockwellRegular/RockwellRegular.woff") format("woff"),
+    url("../fonts/RockwellRegular/RockwellRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "RockwellItalic";
+    src: url('../fonts/RockwellItalic/Rockwell Italic.eot');
+    src: local('?'), url('../fonts/RockwellItalic/Rockwell Italic.woff') format('woff'), url('../fonts/RockwellItalic/Rockwell Italic.ttf') format('truetype'), url('../fonts/RockwellItalic/Rockwell Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Vani';
+    src: url('../fonts/Vani/Vani.eot');
+    src: local('?'), url('../fonts/Vani/Vani.woff') format('woff'), url('../fonts/Vani/Vani.ttf') format('truetype'), url('../fonts/Vani/Vani.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri/calibri.eot');
+    src: local('?'), url('../fonts/Calibri/calibri.woff') format('woff'), url('../fonts/Calibri/calibri.ttf') format('truetype'), url('../fonts/Calibri/calibri.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #ada6a0;
+}
+.wrapper{
+    width: 928px;
+    margin: 0 auto 118px auto;
+    background: url(../images/design/wrapperBg.jpg) no-repeat center 0;
+}
+.block{
+    background-color: #ffffff;
+    box-shadow: 0 0 3px;
+    margin-top: 15px;
+    font-family: Rockwell, sans-serif;
+}
+a{
+    outline: none;
+}
+ul li{
+    display: inline-block;
+}
+.header{
+    height: 122px;
+    /*outline: 1px solid red;*/
+    text-align: center;
+    background: url(../images/design/headerBg.png) no-repeat 257px 31px;
+}
+.header h1{
+    display: inline-block;
+    font: 89px/117px Vani;
+    color: #aeaaa6;
+    outline: 1px solid green;
+    margin-top: 29px;
+    height: 87px;
+    /*overflow: hidden;*/
+}
+.menu{
+    height: 55px;
+}
+.menu ul{
+    padding-top: 17px;
+    float: left;
+    font-size: 0;
+    /*outline: 1px solid green;*/
+}
+.menu li a{
+    text-decoration: none;
+    color: #5b5b5b;
+    text-transform: capitalize;
+    font-size: 18px;
+    /*outline: 1px solid red;*/
+}
+.menu .home{
+    margin-left: 48px;
+}
+.menu .portfolio{
+    margin-left: 71px;
+}
+.menu .blog{
+    margin-left: 60px;
+}
+.menu .contact{
+    margin-left: 62px;
+}
+.menu a:hover{
+    color: #000;
+}
+.search{
+    float: right;
+    /*outline: 1px solid red;*/
+    height: 30px;
+    width: 260px;
+    border: 1px solid #ececec;
+    background-color: #fafafa;
+    margin: 12px 13px 0 0 ;
+}
+.search form{
+    border: none;
+}
+.search input[type="text"]{
+    float: left;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    width: 187px;
+    margin: 3px 0 0 15px;
+    color: #b5b3b3;
+    font: 18px RockwellItalic;
+    background-color: #fafafa;
+    /*outline: 1px solid orange;*/
+}
+.search input[type="submit"]{
+    border: none;
+    outline: none;
+    margin: 5px 0 0 16px;
+    height: 22px;
+    width: 28px;
+    background: url(../images/design/zoom-icon.png) no-repeat;
+    /*outline: 1px solid green;*/
+    float: left;
+}
+.search input[type="submit"]:hover{
+    cursor: pointer;
+}
+.front-panel{
+    height: 375px;
+    position: relative;
+}
+.front-panel img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.columns{
+    margin-top: 17px;
+    font-size: 0;
+    text-align: justify;
+    /*IE*/
+    text-justify: newspaper;
+    text-align-last: justify;
+}
+.columns:after{
+    content: '';
+    width: 100%;
+    height: 0;
+    display: inline-block;
+}
+.columns li{
+    display: inline-block;
+    width: 224px;
+    height: 375px;
+    margin-top: 0;
+    /*IE*/
+    text-align-last: left;
+    /*color: #5b5b5b;*/
+}
+.columns li a{
+    display: block;
+    height: 155px;
+    width: 201px;
+    margin: 12px auto 0;
+    /*outline: 1px solid red;*/
+}
+.columns li a img{
+    height: 100%;
+    width: 100%;
+}
+.columns li p{
+    display: block;
+    text-indent: 36px;
+    font-size: 12px;
+    line-height: 14px;
+    width: 201px;
+    margin: 21px auto 0;
+}
+.greeting{
+    height: 187px;
+    position: relative;
+}
+.greeting .side-collage{
+    font-size: 0;
+    text-align: justify;
+    height: 166px;
+    width: 215px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 11px;
+    /*outline: 1px solid green;*/
+    /*IE*/
+    text-justify: newspaper;
+    text-align-last: justify;
+}
+.greeting .side-collage:after{
+    display: inline-block;
+    content:'';
+    height: 0;
+    width: 100%;
+}
+.greeting .side-collage a{
+    display: inline-block;
+    height: 79px;
+    width: 102px;
+    /*outline: 1px solid red;*/
+    margin-bottom: 7px;
+}
+.greeting .side-collage a img{
+    height: 100%;
+    width: 100%;
+}
+.greeting h2{
+    font-size: 18px;
+    padding: 12px 0 12px 240px;
+}
+.greeting p{
+    text-align: justify;
+    text-indent: 36px;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 14px 0 242px;
+    /*color: #505050;*/
+}
+.greeting .more-info{
+    font-size: 12px;
+    position: absolute;
+    bottom: 14px;
+    right: 13px;
+    color: #000;
+}
+.footer{
+    height: 55px;
+    position: relative;
+    font-size: 0;
+}
+.footer a{
+    display: inline-block;
+    font: 14px Calibri;
+    color: #545454;
+    text-decoration: none;
+    line-height: 55px;
+}
+.footer .terms{
+    padding-left: 22px;
+}
+.footer .policy{
+     padding-left: 16px;
+ }
