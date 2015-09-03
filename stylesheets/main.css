@@ -15,8 +15,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
 @font-face {
     font-family: 'Vani';
     src: url('../fonts/Vani/Vani.eot');
@@ -31,14 +29,7 @@
     font-weight: normal;
     font-style: normal;
 }
-body{
-    background-color: #ada6a0;
-}
-.wrapper{
-    width: 928px;
-    margin: 0 auto 118px auto;
-    background: url(../images/design/wrapperBg.jpg) no-repeat center 0;
-}
+/*Common selectors*/
 .block{
     background-color: #ffffff;
     box-shadow: 0 0 3px;
@@ -51,9 +42,18 @@ a{
 ul li{
     display: inline-block;
 }
+/*End of common selectors*/
+body{
+    background-color: #ada6a0;
+}
+.wrapper{
+    width: 928px;
+    margin: 0 auto 118px auto;
+    background: url(../images/design/wrapperBg.jpg) no-repeat center 0;
+}
+/*Begin of header*/
 .header{
     height: 122px;
-    /*outline: 1px solid red;*/
     text-align: center;
     background: url(../images/design/headerBg.png) no-repeat 257px 31px;
 }
@@ -64,8 +64,9 @@ ul li{
     outline: 1px solid green;
     margin-top: 29px;
     height: 87px;
-    /*overflow: hidden;*/
 }
+/*End of header*/
+/*Begin of menu*/
 .menu{
     height: 55px;
 }
@@ -73,14 +74,12 @@ ul li{
     padding-top: 17px;
     float: left;
     font-size: 0;
-    /*outline: 1px solid green;*/
 }
 .menu li a{
     text-decoration: none;
     color: #5b5b5b;
     text-transform: capitalize;
     font-size: 18px;
-    /*outline: 1px solid red;*/
 }
 .menu .home{
     margin-left: 48px;
@@ -99,7 +98,6 @@ ul li{
 }
 .search{
     float: right;
-    /*outline: 1px solid red;*/
     height: 30px;
     width: 260px;
     border: 1px solid #ececec;
@@ -119,7 +117,6 @@ ul li{
     color: #b5b3b3;
     font: 18px RockwellItalic;
     background-color: #fafafa;
-    /*outline: 1px solid orange;*/
 }
 .search input[type="submit"]{
     border: none;
@@ -128,17 +125,20 @@ ul li{
     height: 22px;
     width: 28px;
     background: url(../images/design/zoom-icon.png) no-repeat;
-    /*outline: 1px solid green;*/
     float: left;
 }
 .search input[type="submit"]:hover{
     cursor: pointer;
 }
+/*End of menu*/
+/*Begin of front-panel*/
 .front-panel{
     height: 375px;
     position: relative;
 }
-.front-panel img{
+.front-panel .img-keeper{
+    height: 350px;
+    width: 900px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -146,6 +146,70 @@ ul li{
     right: 0;
     margin: auto;
 }
+.front-panel .img-keeper img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.front-panel .img-left-part{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.front-panel .img-right-part{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 2;
+}
+.front-panel .img-left-part .left-arrow{
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    z-index: 2;
+}
+.front-panel .img-right-part .right-arrow{
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    z-index: 2;
+}
+.front-panel .img-left-part:hover .left-arrow{
+    visibility: visible;
+    opacity: 0.6;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+}
+.front-panel .img-right-part:hover .right-arrow{
+    visibility: visible;
+    opacity: 0.6;
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+}
+/*End of front panel*/
+/*Begin of columns*/
 .columns{
     margin-top: 17px;
     font-size: 0;
@@ -167,14 +231,12 @@ ul li{
     margin-top: 0;
     /*IE*/
     text-align-last: left;
-    /*color: #5b5b5b;*/
 }
 .columns li a{
     display: block;
     height: 155px;
     width: 201px;
     margin: 12px auto 0;
-    /*outline: 1px solid red;*/
 }
 .columns li a img{
     height: 100%;
@@ -188,6 +250,8 @@ ul li{
     width: 201px;
     margin: 21px auto 0;
 }
+/*End of columns*/
+/*Begin of greeting*/
 .greeting{
     height: 187px;
     position: relative;
@@ -201,7 +265,6 @@ ul li{
     top: 0;
     bottom: 0;
     margin: auto 11px;
-    /*outline: 1px solid green;*/
     /*IE*/
     text-justify: newspaper;
     text-align-last: justify;
@@ -216,7 +279,6 @@ ul li{
     display: inline-block;
     height: 79px;
     width: 102px;
-    /*outline: 1px solid red;*/
     margin-bottom: 7px;
 }
 .greeting .side-collage a img{
@@ -233,7 +295,6 @@ ul li{
     font-size: 12px;
     line-height: 15px;
     margin: 0 14px 0 242px;
-    /*color: #505050;*/
 }
 .greeting .more-info{
     font-size: 12px;
@@ -242,6 +303,8 @@ ul li{
     right: 13px;
     color: #000;
 }
+/*End of greeting*/
+/*Begin of footer*/
 .footer{
     height: 55px;
     position: relative;
@@ -260,3 +323,4 @@ ul li{
 .footer .policy{
      padding-left: 16px;
  }
+/*End of footer*/
