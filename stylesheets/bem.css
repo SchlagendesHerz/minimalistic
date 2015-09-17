@@ -1,0 +1,416 @@
+@import url("reset.css");
+
+@font-face {
+    font-family: "Rockwell";
+    src: url("../fonts/RockwellRegular/RockwellRegular.eot");
+    src: url("../fonts/RockwellRegular/RockwellRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/RockwellRegular/RockwellRegular.woff") format("woff"),
+    url("../fonts/RockwellRegular/RockwellRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RockwellItalic";
+    src: url('../fonts/RockwellItalic/Rockwell Italic.eot');
+    src: local('?'), url('../fonts/RockwellItalic/Rockwell Italic.woff') format('woff'), url('../fonts/RockwellItalic/Rockwell Italic.ttf') format('truetype'), url('../fonts/RockwellItalic/Rockwell Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vani';
+    src: url('../fonts/Vani/Vani.eot');
+    src: local('?'), url('../fonts/Vani/Vani.woff') format('woff'), url('../fonts/Vani/Vani.ttf') format('truetype'), url('../fonts/Vani/Vani.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri/calibri.eot');
+    src: local('?'), url('../fonts/Calibri/calibri.woff') format('woff'), url('../fonts/Calibri/calibri.ttf') format('truetype'), url('../fonts/Calibri/calibri.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.b-container {
+    background: #ada6a0 url(../images/design/wrapperBg.jpg) no-repeat center 0;
+    padding-bottom: 118px;
+}
+
+.b-container__block {
+    background-color: #ffffff;
+    box-shadow: 0 0 3px;
+}
+
+.b-container__logo {
+    margin: 0 auto;
+    padding-top: 31px;
+    width: 407px;
+}
+
+.b-logo {
+    height: 86px;
+    width: 407px;
+    background: url(../images/design/logoBg.png) no-repeat;
+}
+
+.b-container__header {
+    margin: 20px auto 0 auto;
+    width: 928px;
+}
+
+.b-header {
+    width: 928px;
+    height: 55px;
+}
+
+.b-header__menu {
+    float: left;
+}
+
+.b-menu {
+    font-size: 0;
+}
+
+.b-menu__item {
+    font-family: Rockwell, sans-serif;
+    display: inline-block;
+}
+
+.b-menu__link {
+    display: block;
+    text-decoration: none;
+    color: #5b5b5b;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.b-menu__link_home {
+    margin-left: 48px;
+}
+
+.b-menu__link_portfolio {
+    margin-left: 71px;
+}
+
+.b-menu__link_blog {
+    margin-left: 60px;
+}
+
+.b-menu__link_contact {
+    margin-left: 62px;
+}
+
+.b-header__search {
+    float: right;
+    margin: 12px 13px 0 0;
+}
+
+.b-search {
+    height: 30px;
+    width: 260px;
+    border: 1px solid #ececec;
+    background-color: #fafafa;
+}
+
+.b-search__text-input {
+    float: left;
+    margin: 3px 0 0 15px;
+}
+
+.b-text-input {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    width: 187px;
+    color: #b5b3b3;
+    font: 18px RockwellItalic;
+    background-color: #fafafa;
+}
+
+.b-search__search-btn {
+    float: left;
+    margin: 5px 0 0 16px;
+}
+
+.b-search-btn {
+    border: none;
+    outline: none;
+    height: 22px;
+    width: 28px;
+    background: url(../images/design/zoom-icon.png) no-repeat;
+}
+
+.b-container__slider {
+    width: 928px;
+    margin: 15px auto 0 auto;
+}
+
+.b-slider {
+    height: 375px;
+    width: 928px;
+    position: relative;
+}
+
+.b-slider__content-keeper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 350px;
+    width: 900px;
+}
+
+.b-content-keeper {
+    display: inline-block;
+    height: 350px;
+    width: 900px;
+    position: relative;
+}
+
+.b-content-keeper__left-link {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}
+
+.b-left-link {
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+.b-left-link__img {
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+}
+
+.b-content-keeper__right-link {
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 150px;
+    right: 10px;
+}
+
+.b-right-link {
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+.b-right-link__img {
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+}
+
+.b-content-keeper__img {
+    height: 100%;
+    width: 100%;
+}
+
+.b-container__columns {
+    width: 928px;
+    margin: 17px auto 0 auto;
+}
+
+.b-columns {
+    font-size: 0;
+    text-align: justify;
+    /*IE*/
+    text-justify: newspaper;
+    text-align-last: justify;
+}
+
+.b-columns:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    display: inline-block;
+}
+
+.b-columns__item {
+    display: inline-block;
+    width: 224px;
+    height: 375px;
+    margin-top: 0;
+    /*IE*/
+    text-align-last: left;
+}
+
+.b-columns__column-link {
+    margin: 12px auto 0;
+    width: 201px;
+}
+
+.b-column-link {
+    display: block;
+    height: 155px;
+    width: 201px;
+}
+
+.b-column-link_old-farm {
+    background: url("../images/content/old-farm.jpg") no-repeat;
+}
+
+.b-column-link_red-truck {
+    background: url("../images/content/red-truck.jpg") no-repeat;
+}
+
+.b-column-link_interior {
+    background: url("../images/content/interior.jpg") no-repeat;
+}
+
+.b-column-link_river {
+    background: url("../images/content/river.jpg") no-repeat;
+}
+
+.b-columns__column-text {
+    width: 201px;
+    margin: 18px auto 0;
+}
+
+.b-column-text {
+    text-indent: 36px;
+    font: 12px/14px Rockwell;
+}
+
+.b-container__greeting {
+    width: 928px;
+    margin: 16px auto 0 auto;
+}
+
+.b-greeting {
+    width: 928px;
+    height: 187px;
+    position: relative;
+}
+
+.b-greeting__collage {
+    height: 166px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 11px;
+}
+
+.b-collage {
+    font-size: 0;
+    text-align: justify;
+    height: 166px;
+    width: 215px;
+    /*IE*/
+    text-justify: newspaper;
+    text-align-last: justify;
+}
+
+.b-collage:after {
+    display: inline-block;
+    content: '';
+    height: 0;
+    width: 100%;
+}
+
+.b-collage__link {
+    display: inline-block;
+    height: 79px;
+    width: 102px;
+    margin-bottom: 7px;
+}
+
+.b-collage__link_interior {
+    background: url("../images/content/interior.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.b-collage__link_red-truck {
+    background: url("../images/content/red-truck.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.b-collage__link_river {
+    background: url("../images/content/river.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.b-collage__link_old-farm {
+    background: url("../images/content/old-farm.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.b-greeting__greeting-title {
+    padding: 12px 0 12px 240px;
+}
+
+.b-greeting-title {
+    font: 18px Rockwell;
+}
+
+.b-greeting__greeting-text {
+    margin: 0 14px 0 242px;
+}
+
+.b-greeting-text {
+    text-align: justify;
+    text-indent: 36px;
+    font: 12px/15px Rockwell;
+}
+
+.b-greeting__greeting-link {
+    position: absolute;
+    bottom: 14px;
+    right: 13px;
+}
+
+.b-greeting-link {
+    font: 12px Rockwell;
+    color: #000;
+    text-decoration: underline;
+}
+
+.b-container__footer {
+    width: 928px;
+    margin: 15px auto 0 auto;
+}
+
+.b-footer {
+    height: 55px;
+    position: relative;
+}
+
+.b-footer__refs {
+
+}
+
+.b-footer-refs {
+    font-size: 0;
+}
+
+.b-footer-refs__item {
+    display: inline-block;
+}
+
+.b-footer-refs__link {
+    font: 14px Calibri;
+    color: #545454;
+    text-decoration: none;
+    line-height: 55px;
+}
+
+.b-footer-refs__link_terms {
+    padding-left: 22px;
+}
+
+.b-footer-refs__link_policy {
+    padding-left: 16px;
+}

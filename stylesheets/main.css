@@ -55,15 +55,7 @@ body{
 .header{
     height: 122px;
     text-align: center;
-    background: url(../images/design/headerBg.png) no-repeat 257px 31px;
-}
-.header h1{
-    display: inline-block;
-    font: 89px/117px Vani;
-    color: #aeaaa6;
-    outline: 1px solid green;
-    margin-top: 29px;
-    height: 87px;
+    background: url(../images/design/logoBg.png) no-repeat 257px 31px;
 }
 /*End of header*/
 /*Begin of menu*/
