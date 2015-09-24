@@ -43,6 +43,7 @@
     background-color: #ffffff;
     box-shadow: 0 0 3px;
 }
+/*Begin of logo*/
 
 .b-container__logo {
     margin: 0 auto;
@@ -55,6 +56,9 @@
     width: 407px;
     background: url(../images/design/logoBg.png) no-repeat;
 }
+
+/*End of logo*/
+/*Begin of header*/
 
 .b-container__header {
     margin: 20px auto 0 auto;
@@ -144,6 +148,9 @@
     background: url(../images/design/zoom-icon.png) no-repeat;
 }
 
+/*End of header*/
+/*Begin of slider*/
+
 .b-container__slider {
     width: 928px;
     margin: 15px auto 0 auto;
@@ -167,10 +174,22 @@
 }
 
 .b-content-keeper {
-    display: inline-block;
     height: 350px;
     width: 900px;
     position: relative;
+}
+
+.b-content-keeper__left-part {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.b-content-keeper__left-part:hover .b-left-link {
+    opacity: 1;
+    transition: opacity 300ms ease;
 }
 
 .b-content-keeper__left-link {
@@ -185,12 +204,27 @@
     display: block;
     height: 50px;
     width: 50px;
+    opacity: 0;
+    transition: opacity 300ms ease;
 }
 
 .b-left-link__img {
     opacity: 0.6;
     height: 100%;
     width: 100%;
+}
+
+.b-content-keeper__right-part {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.b-content-keeper__right-part:hover .b-right-link {
+    opacity: 1;
+    transition: opacity 300ms ease;
 }
 
 .b-content-keeper__right-link {
@@ -206,6 +240,8 @@
     display: block;
     height: 50px;
     width: 50px;
+    opacity: 0;
+    transition: opacity 300ms ease;
 }
 
 .b-right-link__img {
@@ -218,6 +254,9 @@
     height: 100%;
     width: 100%;
 }
+
+/*End of slider*/
+/*Begin of columns*/
 
 .b-container__columns {
     width: 928px;
@@ -284,6 +323,9 @@
     text-indent: 36px;
     font: 12px/14px Rockwell;
 }
+
+/*End of columns*/
+/*Begin of greeting*/
 
 .b-container__greeting {
     width: 928px;
@@ -378,6 +420,9 @@
     text-decoration: underline;
 }
 
+/*End of greeting*/
+/*Begin of footer*/
+
 .b-container__footer {
     width: 928px;
     margin: 15px auto 0 auto;
@@ -408,9 +453,11 @@
 }
 
 .b-footer-refs__link_terms {
-    padding-left: 22px;
+    margin: 0 0 0 22px;
 }
 
 .b-footer-refs__link_policy {
-    padding-left: 16px;
+    margin: 0 0 0 16px;
 }
+
+/*End of footer*/
